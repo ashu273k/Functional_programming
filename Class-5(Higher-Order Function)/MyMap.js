@@ -16,6 +16,9 @@
 
 Array.prototype.myMap = function(callback) {
     // this -> working array
+    if (this == null || this == undefined) {
+        throw new Error('No array Found')
+    }
 
     if (Array.isArray(this)) {
 
