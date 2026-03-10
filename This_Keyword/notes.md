@@ -30,7 +30,9 @@
 
 ## 1. What is `this`?
 
-### Definition (Simple but Accurate)
+### Definition
+
+> The `this` keyword in JavaScript is a dynamic reference to the object that is executing the current function or code block. Its value is not determined by where the function is defined, but rather by the context in which it is called (known as runtime binding or execution context)
 
 * `this` is a **runtime binding**
 * It refers to **the object that is calling the function**
@@ -39,7 +41,7 @@
 
 ---
 
-## 🔑 The Golden Rule of `this` (MOST IMPORTANT)
+## 🔑 The Golden Rule of `this` 
 
 > 🧠 **`this` depends on HOW a function is called, not WHERE it is written**
 
@@ -408,7 +410,7 @@ Why?
 
 ---
 
-## 9. Interview Cheat Sheet (Screenshot-Ready)
+## 9. Interview Cheat Sheet 
 
 | Case              | `this`             |
 | ----------------- | ------------------ |
@@ -421,7 +423,7 @@ Why?
 
 ---
 
-## 10. Final Takeaways (Exam + Real World)
+## 10. Final Takeaways 
 
 1. `this` is decided at **call time**
 2. Dot (`.`) decides ownership
