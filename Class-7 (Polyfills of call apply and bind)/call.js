@@ -14,21 +14,24 @@ let obj2 = {
     name: "Steve"
 }
 
+
 // sayHello.call(obj2, 'mumbai', 'India') // we do not have native call
 
 // We want to write our own version of the call method
 
 // Polyfill for call method 
 Function.prototype.myCall = function(context, ...args) {
+    
+    context = context || globalThis
     // this -> sayHello
     // context -> obj2
     context.tempFn = this 
-    console.log(context)
     const result = context.tempFn(...args)
     delete context.tempFn
     return result
 
 }
 
+// console.log(typeof null) -> object
 
-obj1.sayHello.myCall(obj2, 'Mumbai', 'India')
+obj1.sayHello.myCall(null, 'Mumbai', 'India')
