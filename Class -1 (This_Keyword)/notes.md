@@ -4,7 +4,6 @@
 
 ## Understanding the `this` Keyword 
 
----
 
 ## Agenda 
 
